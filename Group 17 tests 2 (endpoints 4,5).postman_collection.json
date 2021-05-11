@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "e4361b68-1701-45ac-a505-dc27aa551626",
+		"name": "Group 17 tests 2 (endpoints 4,5)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "object_info_4 (endpoint_4)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/object_info_4?age={{age}}&name={{name}}&salary={{salary}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "{{age}}"
+						},
+						{
+							"key": "name",
+							"value": "{{name}}"
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_info_1 (endpoint_5)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "{{age}}",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "{{weight}}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/user_info_1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user_info_1"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "{{age}}",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
